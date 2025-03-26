@@ -1,7 +1,7 @@
 data/merged_data_for_maps.csv
 interactive_lead_risk_map.html
 Assessor__Archived_05-11-2022__-_Property_Locations_20250304.csv
-data\assessor_address_duplicates.csv
-data\assessor_match_status.csv
-data\matched_addresses.csv
-data\only_in_assessor.csv
+data/assessor_address_duplicates.csv
+data/assessor_match_status.csv
+data/matched_addresses.csv
+data/only_in_assessor.csv
