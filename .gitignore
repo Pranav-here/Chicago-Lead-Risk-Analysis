@@ -5,3 +5,4 @@ data/assessor_address_duplicates.csv
 data/assessor_match_status.csv
 data/matched_addresses.csv
 data/only_in_assessor.csv
+visualizations/interactive_lead_density_map.html
