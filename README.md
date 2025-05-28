@@ -66,7 +66,21 @@ We created a public-facing website to help Chicago residents visualize nearby le
 - 🎯 Adjustable search radius (1–20 nearest lines)
 
 **Example Result:**  
-Search for `3201 S State St, Chicago, IL 60616` returns 5 nearby lines, all classified as **Not Lead**.
+Search for `1050 N Harding Ave, Chicago, IL 60651` returns **5 nearby service lines**, all classified as **Lead**:
+
+| Address                      | Classification | Public Material | Private Material | Gooseneck/Pigtail | Distance (ft) |
+|-----------------------------|----------------|------------------|------------------|-------------------|---------------|
+| 1100 N HARDING AVE          | Lead           | L                | U                | L                 | 145           |
+| 1058 N HARDING AVE          | Lead           | L                | L                | L                 | 177           |
+| 1103 N HARDING AVE          | Lead           | L                | U                | L                 | 174           |
+| 1056 N HARDING AVE          | Lead           | L                | U                | L                 | 189           |
+| 1106 N HARDING AVE          | Lead           | L                | U                | L                 | 206           |
+
+📍 **Location Coordinates**:  
+Latitude: `41.900553`  
+Longitude: `-87.725318`
+
+This result highlights how the tool empowers residents in high-risk zones to discover real risks based on public data.
 
 **Why it matters:**  
 With over 400,000 lines in Chicago, this tool offers residents personalized transparency and encourages action—especially in high-risk zones.
