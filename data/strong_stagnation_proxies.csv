@@ -1,0 +1,11 @@
+"(Variable, Metric)",Spearman Corr
+"('Building Square Feet', '2/3 Min')",-0.256
+"('Building Square Feet', 'Max')",-0.254
+"('Rooms', '2/3 Min')",-0.238
+"('Total Building Square Feet', '1st Draw')",-0.236
+"('Rooms', 'Max')",-0.235
+"('Building Square Feet', '1st Draw')",-0.215
+"('Apartments', '2/3 Min')",-0.215
+"('Total Building Square Feet', 'Max')",-0.212
+"('Apartments', 'Max')",-0.207
+"('Bedrooms', '2/3 Min')",-0.201
