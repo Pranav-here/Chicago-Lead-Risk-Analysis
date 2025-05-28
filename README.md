@@ -51,7 +51,7 @@ Chicago has over **400,000 lead service lines**—the most in any U.S. city. Lea
 
 We created a public-facing website to help Chicago residents visualize nearby lead service lines and understand their local risk.
 
-🔗 **Live Site**: [82-below.vercel.app](https://82-below.vercel.app/check-my-address)
+🔗 **Live Site**: [Check your address](https://82-below.vercel.app/check-my-address)
 
 **Key Features:**
 - 🔎 **Search by Address** — View nearby service line data for any Chicago location
