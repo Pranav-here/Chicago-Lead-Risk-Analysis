@@ -84,6 +84,22 @@ With over 400,000 lines in Chicago, this tool offers residents personalized tran
 README.md             # You are here
 ```
 
+### 📦 Full Dataset & High-Resolution Assets
+
+Due to GitHub file size limitations, our **complete raw datasets, GIS files, high-resolution maps, posters, and presentation materials** are hosted externally.
+
+📁 **Access full project assets via OneDrive**:  
+🔗 [IPRO 497 S25 – Data Visualization Folder (OneDrive)](https://iit0-my.sharepoint.com/personal/obinmahfoudh_hawk_iit_edu/Documents/IPRO%20497%20S25%20Data%20Visualization)
+
+**Includes:**
+- FOIA files and lead test inventory
+- Census & ADI demographic data
+- Final presentation PDFs and posters
+- Animated maps, ArcGIS files, ZIP-level risk tables
+
+Use this folder if you'd like to **reproduce the full analysis or access high-res visuals** that aren’t stored in the GitHub repo.
+
+
 ---
 
 ## 📈 Methods + Stats
