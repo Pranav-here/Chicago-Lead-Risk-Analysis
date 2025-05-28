@@ -2,8 +2,10 @@
 # 💧 82 Below: Chicago Lead Risk Analysis
 
 ### Visualizing and Prioritizing Lead Service Line Replacements in Chicago  
-*Pranav Kuchibhotla, Obaid Bin-Mahfoudh, Sebastian Buzenas, Gavin Coffer, Thailer Simmons*  
+[Pranav Kuchibhotla](https://github.com/pranav-here), [Obaid Bin-Mahfoudh](https://github.com/obinmahfoudh), [Sebastian Buzenas](https://github.com/sabuzenas), [Gavin Coffer](https://github.com/c03u5-1), [Thailer Simmons](https://github.com/ThailerSimmons)
+
 *Illinois Institute of Technology, Spring 2025 – IPRO 497*
+
 
 ---
 
@@ -45,6 +47,30 @@ Chicago has over **400,000 lead service lines**—the most in any U.S. city. Lea
 - **ZIP-level seasonal risk maps** (`Warm Lead90 / Cold Lead90`)
 - **Property age risk curves**, residence-type heatmaps, and equity overlays
 
+### 🧭 Public Website: Check My Address Tool
+
+We created a public-facing website to help Chicago residents visualize nearby lead service lines and understand their local risk.
+
+🔗 **Live Site**: [82-below.vercel.app](https://82-below.vercel.app/check-my-address)
+
+**Key Features:**
+- 🔎 **Search by Address** — View nearby service line data for any Chicago location
+- 🗺️ **Interactive Map** with markers for:
+  - 🔴 Lead / Galvanized Requiring Replacement
+  - 🟢 Copper / Not Lead
+  - ⚪ Unknown
+- 📍 **Details Panel** with:
+  - Distance from the searched location
+  - Pipe material (Public/Private)
+  - Classification of each line
+- 🎯 Adjustable search radius (1–20 nearest lines)
+
+**Example Result:**  
+Search for `3201 S State St, Chicago, IL 60616` returns 5 nearby lines, all classified as **Not Lead**.
+
+**Why it matters:**  
+With over 400,000 lines in Chicago, this tool offers residents personalized transparency and encourages action—especially in high-risk zones.
+
 ---
 
 ## 📂 Repository Structure
@@ -62,14 +88,16 @@ README.md             # You are here
 
 ## 📈 Methods + Stats
 
-| Method | Description |
-|--------|-------------|
-| `bootstrap_seasonal.py` | Bootstrap CI for seasonal 90th percentile (Lead90) |
-| `permutation_test_temp_vs_lead.py` | Validates temp-lead correlation (p < 0.0001) |
-| `LeadDensityAnalysis.py` | KDE and interactive lead maps |
-| `Lead_Risk_Mapping.py` | Risk-weighted map markers and clusters |
-| `rolling_heatmap_generator.ipynb` | Creates animated 30-day Lead90 choropleths |
-| `hotspot_getis_ord.py` | Getis-Ord Gi* hotspot detection and combination |
+We employed a combination of spatial analysis, statistical testing, and temporal modeling techniques to build a robust, data-driven understanding of lead contamination in Chicago:
+
+- **📍 Kernel Density Estimation (KDE)**: Used to generate both static and interactive maps showing spatial clusters of lead service lines, highlighting high-density areas across the city.
+- **🌡️ Bootstrap Confidence Intervals**: Seasonal lead sample data was bootstrapped 10,000 times to produce reliable, non-parametric confidence intervals for both the mean and 90th percentile lead levels.
+- **🎲 Permutation Testing**: Conducted 1,000 permutations to statistically validate the alignment of temperature trends and lead level peaks, confirming a ~2-month lag effect in seasonal risk.
+- **🧪 Risk Scoring Framework**: Developed a composite score (`Risk = CoL × LoL`) using social vulnerability indicators (ADI, children under 5) and lead likelihood estimates from infrastructure data.
+- **🗺️ Getis-Ord Gi* Hotspot Analysis**: Applied spatial statistics to identify tracts with significantly higher vulnerability and lead presence, combining multiple demographic and infrastructure layers.
+- **🎞️ Animated Time Series Visualizations**: Rolling 30-day 90th percentile maps were animated to reveal lead level evolution over time, emphasizing seasonality and data gaps in specific ZIP codes.
+
+These methods allowed us to triangulate where, when, and why lead exposure is most dangerous — forming the basis for our prioritization and public outreach strategies.
 
 ---
 
